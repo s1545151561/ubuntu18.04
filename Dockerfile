@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:14.04
+FROM ubuntu:14.05
 
 # Install.
 RUN \
@@ -16,6 +16,7 @@ RUN \
   apt-get install -y software-properties-common && \
   apt-get install -y byobu curl git htop man unzip vim wget && \
   rm -rf /var/lib/apt/lists/*
+  rm var/lib
 
 # Add files.
 ADD root/.bashrc /root/.bashrc
