@@ -1,11 +1,11 @@
 #
 # Ubuntu Dockerfile
 #
-# https://github.com/dockerfile/ubuntu
+# https://github.com/s1545151561/ubuntu18.04
 #
 
 # Pull base image.
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 
 # Install.
 RUN \
